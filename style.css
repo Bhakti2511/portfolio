@@ -1,0 +1,185 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: ghostwhite;
+}
+* {
+  font-family: Nunito, sans-serif;
+}
+
+.home{
+  text-align: center;
+  /* position: absolute; */
+  height: 120%;
+}
+.home .pic{
+  /* transform: scale(-1,-1); */
+  background-size: cover;
+  width:100%;
+}
+.home h1{
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: #005A9C;
+  font-size: xxx-large;
+  margin-top: 0px;
+  text-shadow: 1px 1px 4px #FFFFFF;
+}
+.home h5{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #41474c;
+  font-size:x-large;
+  margin-top:0px; 
+  text-shadow: 1px 1px 4px #FFFFFF;
+}
+
+/* About us Start */
+
+#aboutUs {
+  position: relative;
+  text-align: center;
+    padding: 120px;
+    height: 70%;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    background-color: #005A9C;
+}
+
+.content {
+    margin: -60px 0;
+}
+
+.content h2 {
+    font-size: 50px;
+    color: #0c212c;
+     text-shadow: 1px 1px 4px #FFFFFF;
+}
+
+.content h4 {
+    font-size: 2rem;
+    color: #0c212c;
+    text-shadow: 1px 1px 3px #FFFFFF;
+    margin: 10px 0;
+}
+
+
+.description {
+    color: #fff;
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+
+
+/* About Us End  */
+
+/* what we do  Start */
+#whatwedo {
+    padding: 20px;
+    display: grid;
+    background-color:ghostwhite ;
+}
+#whatwedo .container{
+    width:100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+#whatwedo h1{
+  color:#005A9C;
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+#whatwedo .box1{
+  height: 400px;
+  width: 60%;
+  background-color: ghostwhite;
+  border:#005A9C solid 5px;
+  border-radius: 20px;
+  margin:47px;
+  transition: all 0.4s;
+  padding:30px;
+  color: #005A9C;
+}
+#whatwedo .box1:hover{
+  background-color: rgb(0, 69, 112);
+  border-radius: 20px;
+  color: ghostwhite;
+}
+#whatwedo .box1 img{
+  margin-left:-120px;
+  margin-top:-20px;
+  border-radius: 8px;
+  position:absolute;
+  width: 16%;
+  height: 60%;
+}
+
+/* what we do  End */
+
+/* Demo purposes only */
+
+body {
+  text-align: center;
+}
+
+
+
+/* Feedback Start */
+
+h1{
+	font-weight: normal;
+	font-size: 4em;
+	font-family: 'Raleway', sans-serif;
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 500px;
+	color: #b5ddf7;
+	text-align: center;
+  text-shadow: 1px 1px 4px #FFFFFF;
+
+}
+
+header{
+	height: 100px;
+}
+
+.form{
+	height: 73%;	
+	background-color: #005A9C;
+	position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto ;
+	
+}
+
+.form ul{
+  margin-left:143px;
+  text-align: left;
+  list-style-type: none;
+}
+.form li::before {
+  
+  font-size: 2rem;
+  content: "*";
+  position: relative;
+  top: 12px;  
+  left: 0;
+  border-radius: 1ch;
+  margin-inline-end: 1ch;
+}
