@@ -183,3 +183,59 @@ header{
   border-radius: 1ch;
   margin-inline-end: 1ch;
 }
+
+/* Achivments */
+
+#achivements{
+  background-color: ghostwhite;
+}
+
+#achivements h1{
+  color:#005A9C;
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#achivements .body {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  padding: 70px;
+}
+
+#achivements .col {
+  background-color: rgba(255, 255, 255, 0.8);
+  border:#005A9C solid 4px;
+  border-radius: 20px;
+  padding: 0px;
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#achivements img{
+  height: 260px;
+  width: 100%;
+  border-radius: 18px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  opacity: 1;
+  display: block;
+}
+
+#achivements .mid {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#achivements .col:hover img {
+  transform: scale(1.5);
+}
