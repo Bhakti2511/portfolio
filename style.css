@@ -346,7 +346,7 @@ h2 {
   font-weight: bold;
   background: linear-gradient(90deg, #000, #fff, #000);
   letter-spacing: 5px;
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 80%;
   animation: shine 7s linear infinite;
