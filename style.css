@@ -14,7 +14,11 @@ Body {
   font-size: medium;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  clear: both;
+
   /* overflow-x: hidden; */
+
 }
 
 :root {
@@ -25,39 +29,89 @@ Body {
 /* Header Start*/
 
 header {
-  width: 40%;
+  width: 30%;
+  margin-left:-8px;
 }
-#header {
-  position: fixed;
+#header1 {
+    position: fixed;
   background-color: transparent;
-  height: 100%;
-  width: 18%;
-  padding: 10px;
-  margin-top: -10px;
-  margin-left: -10px;
+  display: block;
+  font-size: 32px;
+}
+
+#header1 .main {
+  display: block;
+  height: 100vh;
+  width:100%;
+  padding: 2rem;
+  margin-top: -1.5rem;
   box-shadow: 74px -1px 88px -29px rgba(0, 0, 0, 0.45),
     17px 0px 48px -25px rgba(189, 195, 199, 1);
 }
+#header1 .chkbtn {
+  font-size: 32px;
+}
 
-#header ul {
+#header1 .chk {
+  display: none;
+}
+
+#header1 .res-nav {
+  height: max-content;
+  width: max-content;
+  padding: 3rem;
+  display: none;
+}
+#header1 ul {
   padding-left: 0;
 }
-#header li {
+#header1 li {
   list-style-type: none;
   margin-left: 0px;
   text-align: left;
   cursor: pointer;
 }
 
-#header a {
+#header1 a {
   color: ghostwhite;
   text-decoration: none;
+  font-size: 28px;
 }
-#header .element1 {
+#header1 .element1 {
   display: flex;
   align-items: center;
   font-size: 34px;
   margin-bottom: 20px;
+}
+@media(max-width:1024px){
+  #header1{
+    position: fixed;
+    width:18%;
+  }
+  #header1 .main{
+    height: 100vh;
+    width:100%;
+  }
+
+  #header1 .element1{
+    font-size: 22px;
+  }
+
+  svg{
+    height:3rem;
+  }
+}
+
+@media (max-width: 769px) {
+
+  #header1 .res-nav {
+    display: block;
+  }
+  #header1 .main {
+    display: none;
+    left:-100%;
+    transition: all .5s;
+  }
 }
 /* Header End*/
 
@@ -65,11 +119,21 @@ header {
 main {
   width: 60%;
   margin-left: 30%;
+  /* right: 30%; */
+}
+
+@media (max-width:769px){
+  main{
+    margin-left:5%;
+  }
+
   right:30%;
+
 }
 #landing {
   /* margin-left: 30%; */
   margin-top: -10px;
+  width:100%;
 }
 #landing .container {
   font-size: xx-large;
@@ -81,6 +145,8 @@ main {
   text-align: center;
   align-items: center;
   height: 100vh;
+
+
   /* margin-left: 25vw; */
 }
 
@@ -88,7 +154,8 @@ main {
 h4 {
   text-align: center;
   white-space: nowrap;
-  width:100%;
+
+  width: 100%;
   overflow: hidden;
   animation: animated-text 3s steps(25, end) 0s 1 normal both;
 }
@@ -100,6 +167,37 @@ h4 {
   }
   to {
     width: 100vw;
+
+  }
+}
+
+@media (max-width: 1024px) {
+
+  #landing .container {
+    font-size: large;
+    word-spacing: 15px;
+    letter-spacing: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  #landing{
+    width:100%;
+  }
+  #landing .container {
+    overflow-wrap: break-word;
+    word-break: break-all;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+
+  #landing .container h4 {
+    width: 768px;
+    margin-left:15%;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    hyphens: auto;
+    -webkit-hyphens: auto;
   }
 }
 /* Landing page End*/
@@ -131,7 +229,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width:100%;
+  width: 100%;
   align-items: center;
   text-align: center;
 }
@@ -172,6 +270,21 @@ h2 {
   }
 }
 
+@media (max-width: 1024px) {
+  #aboutme {
+    font-size: 18px;
+  }
+
+  #aboutme .head {
+    font-size: 50px;
+  }
+}
+
+@media (max-width:769px){
+  #aboutme .block{
+    width:28rem;
+  }
+}
 /* About US End */
 
 /* Projects  Start */
@@ -233,7 +346,7 @@ h2 {
   font-weight: bold;
   background: linear-gradient(90deg, #000, #fff, #000);
   letter-spacing: 5px;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   background-size: 80%;
   animation: shine 7s linear infinite;
@@ -245,6 +358,14 @@ h2 {
   }
   100% {
     background-position-x: 500%;
+  }
+}
+
+@media (max-width:769px){
+  #projects .box-container{
+    display: grid;
+  gap: 5%;
+  grid-template-columns: repeat(2, 1fr);
   }
 }
 /* Projects  End */
@@ -297,7 +418,7 @@ h2 {
 
 #skills .head {
   position: relative;
-  font-size: 60px;
+  /* font-size: 60px; */
 }
 
 #skills img {
@@ -309,6 +430,7 @@ h2 {
   filter: grayscale();
   transition: 0.3s linear;
   cursor: pointer;
+  width: fit-content;
 }
 #skills img:hover {
   --_i: 10%;
@@ -349,7 +471,7 @@ h2 {
   cursor: pointer;
   margin: 10px;
   overflow-wrap: break-word;
-  -webkit-hyphens: auto;
+  /* -webkit-hyphens: auto; */
 }
 #skills .ele1:hover {
   outline: var(--b) solid var(--c);
@@ -357,6 +479,21 @@ h2 {
   --_i: calc(100% - 2 * var(--s));
 }
 
+@media (max-width: 1024px) {
+  #skills .peragraph {
+    width: 75%;
+  }
+
+  #skills .head {
+    margin-left: -46vw;
+  }
+}
+
+@media (max-width:769px){
+  #skills .head{
+    margin-left:4rem;
+  }
+}
 /* Skills End */
 
 /* achievements Start */
@@ -484,11 +621,11 @@ figure img {
   width: 50%;
 }
 
-.contain-left:hover {
+#footer .contain-left:hover {
   .code {
     background-color: rgba(248, 248, 255, 0.678);
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px !important;
   }
 }
 
@@ -502,19 +639,18 @@ figure img {
 #footer .conatin-right {
   width: 100%;
   height: fit-content;
-  /* text-align: left; */
   display: grid;
   grid-template-rows: auto;
   gap: 10%;
 }
 
-#footer .element{
+#footer .element {
   height: fit-content;
   width: max-content;
   padding: 4%;
 }
 
-a{
+#footer a {
   color: ghostwhite;
   font-size: 20px;
   text-decoration: none;
