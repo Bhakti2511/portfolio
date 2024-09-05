@@ -14,7 +14,11 @@ Body {
   font-size: medium;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
   clear: both;
+
+  /* overflow-x: hidden; */
+
 }
 
 :root {
@@ -122,8 +126,12 @@ main {
   main{
     margin-left:5%;
   }
+
+  right:30%;
+
 }
 #landing {
+  /* margin-left: 30%; */
   margin-top: -10px;
   width:100%;
 }
@@ -137,12 +145,16 @@ main {
   text-align: center;
   align-items: center;
   height: 100vh;
+
+
+  /* margin-left: 25vw; */
 }
 
 #landing h1,
 h4 {
   text-align: center;
   white-space: nowrap;
+
   width: 100%;
   overflow: hidden;
   animation: animated-text 3s steps(25, end) 0s 1 normal both;
@@ -155,6 +167,7 @@ h4 {
   }
   to {
     width: 100vw;
+
   }
 }
 
